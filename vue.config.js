@@ -1,6 +1,6 @@
-module.exports = {
-    publicPath: process.env.NODE_ENV === 'production'
-      ? '/FIT5032-W12/'
-      : '/'
-  }
-  //small change
+import { defineConfig } from "vite";
+import vue from "@vitejs/plugin-vue";
+
+export default defineConfig({
+    plugins: [vue()]
+});
